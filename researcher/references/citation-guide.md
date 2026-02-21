@@ -1,72 +1,123 @@
-# Source Citation Guide
+# Citation Guide
 
 ## Overview
-Proper citation is essential for research credibility. This guide covers standard citation formats and best practices for the Researcher skill.
+Proper citation is essential for research credibility. This guide covers citation formats and best practices.
+
+## Why Cite?
+
+- Gives credit to original authors
+- Allows verification of claims
+- Provides additional resources
+- Demonstrates thorough research
+- Avoids plagiarism
 
 ## Citation Styles
 
-### APA 7th Edition
-```
-Author, A. A., & Author, B. B. (Year). Title of article. Title of Periodical, volume(issue), page-page. https://doi.org/xxxxx
-```
+### APA (American Psychological Association)
+Common for social sciences, education, psychology
 
-### MLA 9th Edition
+**Format:**
 ```
-Author Last, First. "Title of Article." Title of Journal, vol. #, no. #, Year, pp. #-#.
+Author, A. A. (Year). Title of article. Title of Journal, volume(issue), pages. DOI
 ```
 
-### Chicago Style
+**Example:**
 ```
-Author Last, First. "Title of Article." Journal Name Volume, no. Issue (Year): pages.
+Smith, J. A. (2023). Artificial intelligence in healthcare. Journal of Medical AI, 15(2), 45-62. https://doi.org/10.1000/jmai.2023.0045
 ```
 
-## In-Text Citations
+### MLA (Modern Language Association)
+Common for humanities, literature, arts
 
-| Style | Parenthetical | Narrative |
-|-------|---------------|-----------|
-| APA | (Smith, 2023) | Smith (2023) |
-| MLA | (Smith 45) | Smith argues (45) |
-| Chicago | (Smith 2023, 45) | As Smith notes (45) |
-
-## Source Evaluation Checklist
-
-- [ ] Author credentials and expertise
-- [ ] Publication/repository reputation
-- [ ] Publication date (currency)
-- [ ] Peer-review status (for academic sources)
-- [ ] Methodology transparency (for studies)
-- [ ] Bias and objectivity
-- [ ] Citation count and influence
-
-## Source Types & Examples
-
-### Academic Paper
+**Format:**
 ```
-Vaswani, A., et al. (2017). Attention Is All You Need. Advances in Neural Information Processing Systems, 30.
+Author. "Title of Article." Title of Journal, vol. #, no. #, Year, pp. #-#.
+```
+
+### Chicago/Turabian
+Common for history, some social sciences
+
+**Format:**
+```
+Author. "Title of Article." Journal Name Volume, no. Issue (Year): pages.
+```
+
+### IEEE
+Common for engineering, computer science
+
+**Format:**
+```
+[1] A. Author, "Title of paper," Journal Name, vol. #, pp. #–#, Year.
+```
+
+## Web Sources
+
+### General Web Page
+```
+Author or Organization. "Page Title." Website Name. Published/Updated Date. URL.
 ```
 
 ### News Article
 ```
-Smith, J. (2023, March 15). AI Breakthrough Announced. The New York Times, A1.
+Author. "Article Title." Newspaper/Website. Publication Date. URL.
 ```
 
-### Web Page
+### Blog Post
 ```
-World Health Organization. (2023). Artificial Intelligence in Health. https://who.intAI-health
+Author. "Post Title." Blog Name. Date. URL.
 ```
 
-### Company Report
-```
-McKinsey & Company. (2023). The State of AI in 2023. McKinsey Global Institute.
-```
+## In-Text Citations
+
+### APA
+- Paraphrase: (Author, Year)
+- Direct quote: (Author, Year, p. #)
+
+### MLA
+- Paraphrase: (Author)
+- Direct quote: (Author #)
+
+### Chicago
+- Footnote:¹ Author, Title (City: Publisher, Year), #.
+- Paraphrase: (Author Year)
 
 ## Best Practices
 
-1. **Record sources immediately** - Don't rely on memory
-2. **Use multiple formats** - Mix scholarly and popular sources
-3. **Verify links** - Check URLs are still active
-4. **Be consistent** - Use one style throughout
-5. **When in doubt** - Cite more rather than less
+1. **Consistency**: Use one style throughout
+2. **Completeness**: Include all required elements
+3. **Accuracy**: Verify all information
+4. **Accessibility**: Provide working URLs when possible
+5. **Recency**: Prefer peer-reviewed sources
+
+## Source Credibility
+
+### High Credibility
+- Peer-reviewed journals
+- Government publications
+- Academic institutions
+- Established news organizations
+
+### Medium Credibility
+- Industry reports
+- Professional associations
+- Well-known blogs
+- Conference proceedings
+
+### Low Credibility
+- Unverified websites
+- Social media posts
+- Personal opinions
+- Unsponsored content
+
+## Quick Reference
+
+| Element | Required | Optional |
+|---------|----------|----------|
+| Author | ✓ | Multiple authors |
+| Date | ✓ | Exact date |
+| Title | ✓ | Subtitle |
+| Source | ✓ | Volume/Issue |
+| URL/DOI | ✓ | Access date |
 
 ---
-*Part of the Researcher Skill - Agent Zero*
+*Part of the Researcher Skill - Version 1.0*

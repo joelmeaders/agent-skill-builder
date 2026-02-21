@@ -1,71 +1,136 @@
 # Research Methodology Guide
 
 ## Overview
-This guide provides frameworks and best practices for conducting high-quality research using the Researcher skill.
+This guide outlines the methodology for conducting thorough, reliable research using the researcher skill.
 
-## The CRAAP Test
+## Core Principles
 
+### 1. Systematic Approach
+- Define clear research questions before starting
+- Follow a consistent process for each research task
+- Document sources and methodology
+
+### 2. Source Evaluation
 Evaluate sources using the CRAAP test:
+- **Currency**: When was the information published?
+- **Relevance**: How does it relate to your research question?
+- **Authority**: Who is the author? What are their credentials?
+- **Accuracy**: Is the information supported by evidence?
+- **Purpose**: What is the author's intent?
 
-| Criterion | Questions to Ask |
-|-----------|------------------|
-| **Currency** | When was the information published? Has it been updated? Is it current enough for your topic? |
-| **Relevance** | Does the information relate to your research question? Who is the intended audience? |
-| **Authority** | Who is the author/publisher? What are their credentials? Is there contact information? |
-| **Purpose** | What is the purpose of the information? Is it fact, opinion, or propaganda? |
-| **Point of View** | Does the author present multiple perspectives? Is there bias? |
+### 3. Information Gathering
 
-## Search Strategies
+#### Primary Sources
+- Original research and data
+- Official documents and records
+- Expert interviews
+- Direct observations
 
-### Broad to Specific
-1. Start with broad searches to understand the topic landscape
-2. Narrow down to specific aspects
-3. Refine based on initial findings
+#### Secondary Sources
+- Analysis and interpretation of primary sources
+- Review articles
+- Books and textbooks
+- News articles (with attribution)
 
-### Keyword Combinations
-- Use Boolean operators (AND, OR, NOT)
-- Combine concepts: "AI" AND "healthcare" AND "diagnosis"
-- Use quotes for exact phrases
+#### Tertiary Sources
+- Encyclopedias
+- Dictionaries
+- Fact books
 
-### Source Types
-- **Academic**: Google Scholar, university publications
-- **News**: Recent developments, current events
-- **Industry**: Company reports, market analysis
-- **Government**: Official statistics, policy documents
+### 4. Search Strategy
 
-## Information Quality Hierarchy
+#### Keyword Development
+1. Identify core concepts
+2. Create alternative terms for each concept
+3. Use Boolean operators (AND, OR, NOT)
+4. Consider truncation and wildcards
 
-```
-┌─────────────────────────────────────┐
-│     Peer-Reviewed Academic           │  ← Highest credibility
-├─────────────────────────────────────┤
-│     Government & Institutional      │
-├─────────────────────────────────────┤
-│     Established News & Media        │
-├─────────────────────────────────────┤
-│     Industry Reports & Analysis     │
-├─────────────────────────────────────┤
-│     Company & Organization Sites    │
-├─────────────────────────────────────┤
-│     Blogs & Personal Websites       │  ← Lower credibility
-└─────────────────────────────────────┘
-```
+#### Search Tips
+- Start broad, then narrow
+- Use multiple search engines
+- Check image results for visual data
+- Look for academic databases
+- Use advanced search operators
 
-## Research Workflow
+### 5. Data Analysis
 
-1. **Define**: Clarify your research question
-2. **Plan**: Identify key concepts and search terms
-3. **Search**: Use multiple sources and strategies
-4. **Evaluate**: Apply CRAAP test
-5. **Synthesize**: Combine findings into coherent insights
-6. **Cite**: Document all sources properly
+#### Qualitative Analysis
+- Thematic coding
+- Content analysis
+- Narrative analysis
 
-## Tips for Complex Topics
+#### Quantitative Analysis
+- Statistical interpretation
+- Data visualization
+- Comparative metrics
 
-- Break down complex topics into subtopics
-- Use parallel research with subagents for different aspects
-- Cross-verify claims across multiple authoritative sources
-- Note consensus and conflicts in the literature
+### 6. Synthesis
+
+#### Creating Coherent Narratives
+1. Organize by theme, not by source
+2. Identify patterns and contradictions
+3. Show evolution of ideas
+4. Connect findings to research questions
+
+### 7. Documentation
+
+#### Note-Taking Best Practices
+- Always record source URL and access date
+- Quote accurately
+- Paraphrase with proper attribution
+- Distinguish between facts and opinions
+
+### 8. Quality Assurance
+
+#### Verification Steps
+1. Cross-check facts across multiple sources
+2. Check for publication retractions or corrections
+3. Verify author credentials
+4. Assess potential biases
+5. Look for peer review status
+
+## Common Research Scenarios
+
+### Deep Dive Research
+For comprehensive topic exploration:
+1. Background search for context
+2. Academic/industry sources
+3. Recent developments
+4. Expert perspectives
+5. Data and statistics
+
+### Fact-Checking
+For verification tasks:
+1. Identify specific claims
+2. Search for primary sources
+3. Check fact-checking databases
+4. Note confidence levels
+5. Provide source links
+
+### Comparative Analysis
+For comparison tasks:
+1. Define comparison criteria
+2. Research each item equally
+3. Use standardized metrics
+4. Present balanced view
+5. Recommend use cases
+
+## Ethical Considerations
+
+1. **Accuracy**: Prioritize truth over speed
+2. **Fairness**: Present multiple viewpoints
+3. **Attribution**: Credit all sources
+4. **Transparency**: Note limitations and uncertainties
+5. **Independence**: Maintain objectivity
+
+## Common Pitfalls
+
+- Confirmation bias
+- Over-reliance on single sources
+- Outdated information
+- Misunderstanding context
+- Ignoring contradictory evidence
+- Unverified claims
 
 ---
-*Part of the Researcher Skill - Agent Zero*
+*Part of the Researcher Skill - Version 1.0*

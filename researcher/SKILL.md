@@ -163,10 +163,10 @@ call_subordinate(
 
 ### Example 1: Topic Research with Parallel Subagents
 - **Input**: "Research the impact of AI on healthcare diagnostics"
-- **Approach**:
+- **Approach**: 
   - Use 3 subagents for: (1) Clinical applications, (2) Market trends, (3) Regulatory landscape
   - Synthesize results into comprehensive report
-- **Output**:
+- **Output**: 
   - Executive summary with key findings
   - Overview of AI diagnostic tools (imaging, pathology, predictive)
   - Statistics on accuracy improvements
@@ -234,8 +234,8 @@ call_subordinate(
 
 4. **Sensitive or Controversial Topics**
    - Present multiple perspectives fairly
-   - Acknowledge limitations and Avoid taking partisan positions biases
-   -
+   - Acknowledge limitations and biases
+   - Avoid taking partisan positions
    - Cite diverse source types
 
 5. **Technical or Specialized Topics**
@@ -280,7 +280,7 @@ call_subordinate(
 ### Output Formats
 The skill supports various output formats:
 - Brief summary (250-500 words)
-- Standard report (1000-2000 words)
+- Standard report (1000-2000 words)  
 - Comprehensive analysis (3000+ words)
 - Comparison tables
 - Fact-sheets with key points

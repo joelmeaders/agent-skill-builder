@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "{{SERVER_NAME}}": {
+      "type": "local",
+      "command": "npx",
+      "args": ["{{NPM_PACKAGE}}"],
+      "description": "{{DESCRIPTION}}",
+      "env": {
+        "{{ENV_VAR}}": "${{SECRET_NAME}}"
+      }
+    }
+  }
+}

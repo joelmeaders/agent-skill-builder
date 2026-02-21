@@ -2,52 +2,91 @@
 """
 Document Analyzer Script for Researcher Skill
 
-Analyzes web documents and extracts key information, statistics, and insights.
+Analyzes documents to extract key information, statistics, and insights.
 
 Usage:
-    python scripts/document_analyzer.py <url> [--query "specific question"]
+    python scripts/document_analyzer.py <document_url> [--extract type]
 
 Arguments:
-    url: URL of the document to analyze
-    --query: Optional specific question about the document
+    document: URL or path to document
+    --extract: Type of extraction (summary, key_points, stats, all)
 
 Returns:
-    JSON formatted analysis with key findings, statistics, and insights
+    Extracted information in structured format
 """
 
 import argparse
 import json
-import sys
+import re
 
-def analyze_content(content, query=None):
-    """Analyze document content and extract key information."""
-    analysis = {
-        "word_count": len(content.split()),
-        "key_findings": [],
-        "statistics": [],
-        "topics": []
-    }
+def extract_statistics(text):
+    """Extract numerical statistics from text."""
+    patterns = [
+        r'(\d+\.?\d*%)\s+',  # Percentages
+        r'(\d{1,3}(?:,\d{3})*(?:\.\d+)?)\s+(?:million|billion|trillion)',  # Large numbers
+        r'\$\s*(\d+\.?\d*)\s+(?:billion|million|thousand)',  # Currency
+    ]
     
-    if query:
-        analysis["query_response"] = "Use document_query tool for detailed analysis"
+    stats = []
+    for pattern in patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        stats.extend(matches)
     
-    return analysis
+    return stats[:10]  # Limit to top 10
+
+def extract_key_points(text, num_points=5):
+    """Extract key points from document text."""
+    sentences = re.split(r'[.!?]+', text)
+    
+    # Simple heuristic: prefer sentences with numbers or key terms
+    scored = []
+    key_terms = ['important', 'significant', 'key', 'major', 'critical', 'essential']
+    
+    for sent in sentences:
+        if len(sent.strip()) < 20:
+            continue
+        score = 0
+        sent_lower = sent.lower()
+        if any(term in sent_lower for term in key_terms):
+            score += 2
+        if any(c.isdigit() for c in sent):
+            score += 1
+        if score > 0:
+            scored.append((score, sent.strip()))
+    
+    scored.sort(reverse=True)
+    return [s[1] for s in scored[:num_points]]
+
+def generate_summary(text, max_length=500):
+    """Generate a brief summary of the document."""
+    # Simple extractive summarization
+    sentences = re.split(r'[.!?]+', text)
+    summary = ""
+    
+    for sent in sentences:
+        if len(summary) + len(sent) > max_length:
+            break
+        summary += sent + "."
+    
+    return summary.strip() if summary else text[:max_length]
 
 def main():
-    parser = argparse.ArgumentParser(description="Document analysis tool for research")
-    parser.add_argument("url", help="URL of document to analyze")
-    parser.add_argument("--query", help="Specific question about the document")
+    parser = argparse.ArgumentParser(description="Document analysis tool")
+    parser.add_argument("document", help="Document URL or path")
+    parser.add_argument("--extract", default="all", 
+                        choices=["summary", "key_points", "stats", "all"],
+                        help="Type of extraction")
     
     args = parser.parse_args()
     
     # Note: Actual document analysis is handled by document_query tool
-    # This script provides formatting utilities
+    # This script provides post-processing utilities
     
     print(json.dumps({
         "status": "ready",
         "message": "Use document_query tool for actual document analysis",
-        "url": args.url,
-        "query": args.query
+        "document": args.document,
+        "extraction_type": args.extract
     }, indent=2))
 
 if __name__ == "__main__":
